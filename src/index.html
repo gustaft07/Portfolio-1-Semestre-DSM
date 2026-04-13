@@ -1,13 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Portfólio Gustavo</h1>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+  html {
+    scroll-behavior: smooth;
+    margin: 0;
+  }
+
+  body {
+    background-color: rgb(36, 36, 36);
+    color: white;
+
+  }
+
+  .navbar-nav .nav-link {
+    position: relative;
+    color: white;
+  }
+
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #0069a1;
+    transition: width 1s ease;
+  }
+
+  .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+
+  .foto-perfil {
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(3, 96, 172, 0.822);
+    transition: 0.7s;
+  }
+
+  .foto-perfil:hover {
+    transform: scale(1.05);
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom border-2 border-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Formações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contatos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container md-5 mt-4">
+    <div class="row align-items-center g-5">
+
+      <div class="col-md-5 text-center">
+        <img src="img/eu.jpeg" class="foto-perfil" alt="Minha foto">
+      </div>
+      <div class="col-md-7">
+        <h2 id="Sobre" class="text-center text-info">
+          Sobre Mim
+        </h2>
+        <p class="text-justify fw-light">
+          Sou estudante da FATEC Prof. Jessen Vidal, com formação no ensino médio integrado ao curso técnico pela ETEC.
+          Tenho grande interesse na área de desenvolvimento e estou sempre buscando evoluir minhas habilidades e
+          aprender
+          novas tecnologias.
+        </p>
+        <p class="text-justify fw-light">
+          Possuo conhecimentos em HTML, CSS e Bootstrap para criação de interfaces modernas e responsivas, além de
+          experiência com Tailwind CSS. No back-end, trabalho com Python utilizando o framework Flask, e também tenho
+          conhecimentos em banco de dados com MySQL.
+        </p>
+        <p class="text-justify fw-light">
+          Estou em constante aprendizado e motivado a desenvolver projetos que unam design, funcionalidade e boas
+          práticas
+          de programação.
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
