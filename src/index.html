@@ -53,11 +53,12 @@
 </style>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light border-bottom border-2 border-info">
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom border-2 border-info sticky-top"
+    style="background-color: rgb(36, 36, 36);">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler bg-secondary align-self-end" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-center" id="navbarNav">
@@ -66,26 +67,26 @@
             <a class="nav-link" href="#sobre">Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Formações</a>
+            <a class="nav-link" href="#formação">Formações</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projetos</a>
+            <a class="nav-link" href="#projetos">Projetos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contatos</a>
+            <a class="nav-link" href="#contato">Contatos</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="container md-5 mt-4">
+  <div class="container md-5 mt-4 mb-5">
     <div class="row align-items-center g-5">
 
       <div class="col-md-5 text-center">
         <img src="img/eu.jpeg" class="foto-perfil" alt="Minha foto">
       </div>
       <div class="col-md-7">
-        <h2 id="Sobre" class="text-center text-info">
+        <h2 id="sobre" class="text-center text-info">
           Sobre Mim
         </h2>
         <p class="text-justify fw-light">
@@ -107,9 +108,82 @@
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+  <div class="d-flex flex-wrap">
+  <div class="pt-4 ps-5">
+    <h2 id="formação" class="ps-5 text-info mt-5">
+      Formações
+    </h2>
+    <ul class="ms-5  fw-light">
+      <li>Ensino Médio Integrado ao Técnico em Desenvolvimento de Sistemas | ETEC Machado de Assis</li>
+      <li>Desenvolvimento de Software Multiplataforma | Fatec Prof. Jessen Vidal(Em andamento)</li>
+    </ul>
+  </div>
+  <div class="pt-4 ps-5">
+    <h2 id="formação" class="ps-5 text-info mt-5">
+      Cursos
+    </h2>
+    <ul class="ms-5  fw-light">
+      <li>Logica de Programação | Alura</li>
+      <li>Python - Funções, Condicionais, Laços, Primeira Aplicação | Alura</li>
+      <li>Git e GitHub | Alura</li>
+      <li>HTML, CSS e JS | Fatec/Etec</li>
+    </ul>
+  </div>
+  </div>
+  <div class="pt-4 ps-5">
+    <h2 id="projetos" class="ps-5 text-info mt-5">
+      Projetos
+    </h2>
+    <div class="d-flex flex-wrap mt-5 ms-3">
+      <div class="card bg-dark text-white border-info ms-5 mb-5" style="width: 18rem;">
+        <img src="img/cafe.jpg" class="card-img-top" alt="Thumbnail do Projeto">
+
+        <div class="card-body">
+          <h5 class="card-title">Cafeteria Ficticia</h5>
+          <p class="card-text">Um site feito como atividade, para uma cafeteria ficticia, utilizado HTML e CSS, e o
+            vercel para a hospedação.</p>
+
+          <a href="https://1-dsm-1-sem.vercel.app/index.html" class="btn btn-outline-info" target="_blank">Visualizar
+            Projeto</a>
+        </div>
+      </div>
+
+      <div class="card bg-dark text-white border-info ms-5 mb-5" style="width: 18rem;">
+        <img src="img/api1.png" class="card-img-top" alt="Thumbnail do Projeto">
+
+        <div class="card-body">
+          <h5 class="card-title">API Radar Cidadão</h5>
+          <p class="card-text">Projeto API Radar Cidadão. Projeto do 1°Sem. de DSM, feito para auxiliar a vizualização
+            de dados de deputados para eleitores</p>
+
+          <a href="https://github.com/APILumina/API1_DSM_Lumina" class="btn btn-outline-info" target="_blank">Visualizar
+            Projeto</a>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5 py-5 text-white">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="mb-4">Contato</h2>
+          <p class="mb-5">Gostou do meu trabalho? Vamos conversar sobre o seu próximo projeto!</p>
+
+          <div class="d-flex justify-content-center gap-3 flex-wrap" id="contato">
+            <a href="https://www.instagram.com/gu_oliveira07/" target="_blank" class="btn btn-outline-info btn-lg" >
+              Instagram
+            </a>
+            <a href="https://www.linkedin.com/in/gustavo-oliveira-1056303a8/" target="_blank" class="btn btn-outline-info btn-lg">
+              LinkedIn
+            </a>
+            <a href="https://github.com/gustaft07" target="_blank" class="btn btn-outline-info btn-lg">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
